@@ -43,7 +43,16 @@ const TwoWayBinding = {
     }
 }
 
+const ConditionalRendering = {
+    data() {
+        return {
+            seen: true
+        }
+    }
+}
+
 Vue.createApp(Counter).mount('#counter')
 Vue.createApp(AttributeBinding).mount('#bind-attribute')
 Vue.createApp(EventHandling).mount('#event-handling')
 Vue.createApp(TwoWayBinding).mount('#two-way-binding')
+Vue.createApp(ConditionalRendering).mount('#conditional-rendering')
