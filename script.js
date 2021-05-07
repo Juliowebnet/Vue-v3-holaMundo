@@ -35,6 +35,15 @@ const EventHandling = {
     }
 }
 
+const TwoWayBinding = {
+    data() {
+        return {
+            message: 'Hello Vue!'
+        }
+    }
+}
+
 Vue.createApp(Counter).mount('#counter')
 Vue.createApp(AttributeBinding).mount('#bind-attribute')
 Vue.createApp(EventHandling).mount('#event-handling')
+Vue.createApp(TwoWayBinding).mount('#two-way-binding')

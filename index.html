@@ -23,6 +23,11 @@
         <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
 
+    <div id="two-way-binding">
+        <p>{{message}}</p>
+        <input v-model="message"/>
+    </div>
+
     <script src="https://unpkg.com/vue@next"></script>
     <script src="./script.js"></script>
 </body>
