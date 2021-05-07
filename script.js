@@ -19,5 +19,22 @@ const AttributeBinding = {
     }
 }
 
+const EventHandling = {
+    data(){
+        return {
+            message: 'Hello Vue.js!'
+        }
+    },
+    methods: {
+        reverseMessage() {
+            this.message = this.message
+            .split('')
+            .reverse()
+            .join('')
+        }
+    }
+}
+
 Vue.createApp(Counter).mount('#counter')
 Vue.createApp(AttributeBinding).mount('#bind-attribute')
+Vue.createApp(EventHandling).mount('#event-handling')
