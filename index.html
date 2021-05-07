@@ -31,6 +31,14 @@
     <div id="conditional-rendering">
         <span v-if="seen">Now you see me</span>
     </div>
+    
+    <div id="list-rendering">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="./script.js"></script>

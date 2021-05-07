@@ -51,8 +51,21 @@ const ConditionalRendering = {
     }
 }
 
+const ListRendering = {
+    data() {
+        return {
+            todos: [
+                {text: 'Learn JavaScript'},
+                {text: 'Learn Vue'},
+                {text: 'Build something awesome'}
+            ]
+        }
+    }
+}
+
 Vue.createApp(Counter).mount('#counter')
 Vue.createApp(AttributeBinding).mount('#bind-attribute')
 Vue.createApp(EventHandling).mount('#event-handling')
 Vue.createApp(TwoWayBinding).mount('#two-way-binding')
 Vue.createApp(ConditionalRendering).mount('#conditional-rendering')
+Vue.createApp(ListRendering).mount('#list-rendering')
